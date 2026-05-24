@@ -1,0 +1,11 @@
+{
+  "transform": "conservative_sigmoid",
+  "params": {
+    "a": 3.5,
+    "b": 0.14,
+    "offset": 0.04
+  },
+  "mainnet_safe": true,
+  "mode": "conservative",
+  "note": "Holdout-tuned transform; ensemble + blend search on release groups."
+}
