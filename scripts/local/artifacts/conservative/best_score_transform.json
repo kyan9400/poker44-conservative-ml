@@ -3,9 +3,9 @@
   "params": {
     "a": 3.5,
     "b": 0.14,
-    "offset": 0.04
+    "offset": 0.01
   },
   "mainnet_safe": true,
   "mode": "conservative",
-  "note": "Holdout-tuned transform; ensemble + blend search on release groups."
+  "note": "Phase-1 Fix 1: offset reduced from +0.04 to +0.01 to remove FPR-catastrophe tail under date shift. Validated via LODO across 9 dates (reports/SIM_TO_REAL_DIAGNOSIS.md). Production backup at best_score_transform.production.json."
 }
