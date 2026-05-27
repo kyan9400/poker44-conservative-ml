@@ -1,0 +1,11 @@
+{
+  "transform": "conservative_sigmoid",
+  "params": {
+    "a": 3.5,
+    "b": 0.45,
+    "offset": -0.01
+  },
+  "mainnet_safe": true,
+  "mode": "conservative",
+  "note": "Fix 3: 9-fold LODO ExtraTrees ensemble (avg raw probabilities) with the Fix 2b live transform retained (b=0.45, offset=-0.010). Ensemble is the robustness lever; transform stays at proven-safe live values to avoid regressing into the b=0.14 all-BOT failure mode under live raw-shift. Single-LODO matches Fix 2b baseline; ensemble_loo OOF mean=1.000 with fpr_max=0.000 on benchmark. See reports/SIM_TO_REAL_DIAGNOSIS.md."
+}
