@@ -1,6 +1,5 @@
 {
-  "model_type": "extra_trees",
-  "model_name": "lodo_ensemble_9",
+  "model_type": "extra_trees_deep",
   "granularity": "chunk",
   "hand_aggregation": null,
   "feature_names": [
@@ -235,264 +234,46 @@
     "2026-05-01",
     "2026-05-02",
     "2026-05-03",
-    "2026-05-04",
     "2026-05-05",
     "2026-05-06",
-    "2026-05-07",
-    "2026-05-08"
+    "2026-05-07"
   ],
-  "holdout_sourceDates": [],
+  "holdout_sourceDates": [
+    "2026-05-04",
+    "2026-05-08",
+    "2026-05-26"
+  ],
   "include_heuristic_feature": false,
-  "in_sample_metrics": {
-    "n_dates": 9,
-    "n_batches": 107,
-    "reward_mean": 0.999088785046729,
-    "reward_min": 0.9025,
+  "holdout_grouped_metrics": {
+    "reward_mean": 0.9957608695652174,
     "fpr_max": 0.05,
-    "zero_reward_batches": 0,
-    "per_date_mean": 0.9990972222222223,
+    "bot_recall_mean": 1.0,
+    "ap_mean": 1.0,
+    "reward_min": 0.9025,
+    "n_groups": 23,
     "per_date_min": 0.991875,
-    "bot_recall_mean": 1.0
-  },
-  "lodo_summary": {
-    "n_dates": 9,
-    "n_batches": 107,
-    "reward_mean": 0.9771028037383178,
-    "reward_min": 0.65,
-    "fpr_max": 0.0,
-    "zero_reward_batches": 0,
-    "per_date_mean": 0.9752525252525253,
-    "per_date_min": 0.7772727272727273,
-    "bot_recall_mean": 0.9292929292929293
-  },
-  "ensemble_loo_summary": {
-    "n_dates": 9,
-    "n_batches": 107,
-    "reward_mean": 1.0,
-    "reward_min": 0.9999999999999999,
-    "fpr_max": 0.0,
-    "zero_reward_batches": 0,
-    "per_date_mean": 1.0,
-    "per_date_min": 1.0,
-    "bot_recall_mean": 1.0
-  },
-  "lodo_per_date": {
-    "2026-04-30": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-01": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-02": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-03": {
-      "reward_mean": 0.991875,
-      "fpr_max": 0.05,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 0.9025,
-      "n_groups": 12,
-      "per_date_min": 0.991875,
-      "per_date_mean": 0.991875,
-      "n_dates": 1
-    },
-    "2026-05-04": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-05": {
-      "reward_mean": 0.991875,
-      "fpr_max": 0.05,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 0.9025,
-      "n_groups": 12,
-      "per_date_min": 0.991875,
-      "per_date_mean": 0.991875,
-      "n_dates": 1
-    },
-    "2026-05-06": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-07": {
-      "reward_mean": 0.98375,
-      "fpr_max": 0.05,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 0.9025,
-      "n_groups": 12,
-      "per_date_min": 0.98375,
-      "per_date_mean": 0.98375,
-      "n_dates": 1
-    },
-    "2026-05-08": {
-      "reward_mean": 0.8806818181818182,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 0.6590909090909091,
-      "ap_mean": 1.0,
-      "reward_min": 0.7025000000000001,
-      "n_groups": 11,
-      "per_date_min": 0.8806818181818182,
-      "per_date_mean": 0.8806818181818182,
-      "n_dates": 1
-    }
-  },
-  "ensemble_loo_per_date": {
-    "2026-04-30": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-01": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 0.9999999999999999,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-02": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-03": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-04": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-05": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-06": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 12,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
-    },
-    "2026-05-07": {
-      "reward_mean": 0.991875,
-      "fpr_max": 0.05,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 0.9025,
-      "n_groups": 12,
-      "per_date_min": 0.991875,
-      "per_date_mean": 0.991875,
-      "n_dates": 1
-    },
-    "2026-05-08": {
-      "reward_mean": 1.0,
-      "fpr_max": 0.0,
-      "bot_recall_mean": 1.0,
-      "ap_mean": 1.0,
-      "reward_min": 1.0,
-      "n_groups": 11,
-      "per_date_min": 1.0,
-      "per_date_mean": 1.0,
-      "n_dates": 1
+    "per_date_mean": 0.9959374999999999,
+    "n_dates": 2,
+    "per_date_rewards": {
+      "2026-05-04": 0.991875,
+      "2026-05-08": 1.0
     }
   },
   "score_transform": {
     "transform": "conservative_sigmoid",
     "params": {
       "a": 3.5,
-      "b": 0.45,
-      "offset": -0.01
+      "b": 0.18,
+      "offset": 0.12
     },
     "mainnet_safe": true,
     "mode": "conservative",
-    "note": "Fix 3: 9-fold LODO ExtraTrees ensemble (avg raw probabilities) with the Fix 2b live transform retained (b=0.45, offset=-0.010). Ensemble is the robustness lever; transform stays at proven-safe live values to avoid regressing into the b=0.14 all-BOT failure mode under live raw-shift. Single-LODO matches Fix 2b baseline; ensemble_loo OOF mean=1.000 with fpr_max=0.000 on benchmark. See reports/SIM_TO_REAL_DIAGNOSIS.md."
+    "note": "Holdout-tuned transform; ensemble + blend search on release groups."
   },
-  "risk_profile": "conservative_fix3",
+  "git_commit": "0c99374479815ab697f1d1fd097ed74cd875e5b1",
+  "risk_profile": "conservative_pre_mainnet",
   "feature_count": 225,
-  "is_ensemble": true,
-  "n_ensemble_models": 9,
-  "fix_generation": "fix3",
-  "trained_at_utc": "2026-05-27T08:28:06Z"
+  "is_ensemble": false,
+  "tuning_objective": "robust",
+  "recall_focus_training": true
 }

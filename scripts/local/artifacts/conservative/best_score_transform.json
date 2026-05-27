@@ -3,9 +3,9 @@
   "params": {
     "a": 3.5,
     "b": 0.45,
-    "offset": 0.030
+    "offset": 0.0
   },
   "mainnet_safe": true,
   "mode": "conservative",
-  "note": "Fix 3c: offset +0.020 -> +0.030 (additive +0.01 on live risk_scores). Sim on post-restart logged scores: 5/20 -> ~6/20; caut425 cluster 1/20 -> ~2/20. Keeps b=0.45 to avoid b=0.14 all-BOT live failure."
+  "note": "Supertrain v1: extra_trees_deep + live-safe b=0.45 offset sweep on holdout (2026-05-26 included)"
 }
