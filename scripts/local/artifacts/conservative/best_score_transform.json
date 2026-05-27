@@ -3,9 +3,9 @@
   "params": {
     "a": 3.5,
     "b": 0.45,
-    "offset": -0.01
+    "offset": 0.020
   },
   "mainnet_safe": true,
   "mode": "conservative",
-  "note": "Fix 3: 9-fold LODO ExtraTrees ensemble (avg raw probabilities) with the Fix 2b live transform retained (b=0.45, offset=-0.010). Ensemble is the robustness lever; transform stays at proven-safe live values to avoid regressing into the b=0.14 all-BOT failure mode under live raw-shift. Single-LODO matches Fix 2b baseline; ensemble_loo OOF mean=1.000 with fpr_max=0.000 on benchmark. See reports/SIM_TO_REAL_DIAGNOSIS.md."
+  "note": "Fix 3b: 9-fold LODO ensemble + live transform b=0.45 with offset raised from -0.010 to +0.020 to fix post-Fix3 under-flagging (live avg ~1.3 BOT/20). Simulated +0.02 on recent live scores -> ~3.5 BOT/20. Keeps b=0.45 to avoid b=0.14 all-BOT failure on live raw-shift."
 }
