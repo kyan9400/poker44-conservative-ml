@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files (keep .env.example if one is ever added)
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local training and runtime scratch.
+# scripts/local/train_conservative.py reads its CSV inputs from scripts/local/artifacts/
+# and copies the winning artifact set to the same folder; the published set lives in
+# scripts/local/artifacts/conservative/ and stays tracked.
+logs/
+scripts/local/artifacts/*.csv
+scripts/local/artifacts/*.pkl
+scripts/local/artifacts/*.json
